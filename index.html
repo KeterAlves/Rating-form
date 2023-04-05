@@ -41,23 +41,37 @@
       }
       ul{
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        align-items: start;
         flex-direction: row;
+        justify-content: space-around;
         list-style-type: none;
+        padding-inline-start: 0px;
       }
+
+      .btn{
+        border-radius: 50%;
+        border: none;
+        padding: 20px;
+        background-color: hsl(215, 16%, 21%);
+        color: white;
+      }
+
 
       img{
         border: none;
         border-radius: 50%;
         background-color: hsl(215, 16%, 21%);
-        padding: 10px;
+        padding: 15px;
+        width: 20px;
       }
 
       .container-form{
+        display: flex;
+        flex-direction: column;
         background-color:hsl(213, 19%, 18%);
-        padding: 20px;
-        
+        padding: 30px;
+        border-radius: 10px;
+        width: 350px;
       }
       .result{
         background-color:hsl(213, 19%, 18%);
@@ -70,8 +84,22 @@
       .btnSub{
         border: none;
         border-radius: 25px;
-        padding: 10px;
+        padding: 12px;
         background-color: hsl(25, 97%, 53%);
+        color: white;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      .btnSub:hover{
+        border: none;
+        border-radius: 25px;
+        padding: 12px;
+        background-color: hsl(25, 97%, 53%);
+        color: white;
+        font-weight: 700;
+        letter-spacing: 1px;
+        background-color: white;
+        color: hsl(25, 97%, 53%);
       }
     </style>
   </head>
@@ -85,6 +113,7 @@
        <p>Please let us know how we did with your support request.
       All feedback is appreciated to help us improve our offering!</p>
       
+      
       <ul>
       <li><button class="btn">1</button></li>
       <li><button class="btn">2</button></li>
@@ -92,7 +121,8 @@
       <li><button class="btn">4</button></li>
       <li><button class="btn">5</button></li>
       </ul>
-      <button class="btnSub">Submit</button>
+      <br/>
+      <button class="btnSub">SUBMIT</button>
     
       
     </div>
